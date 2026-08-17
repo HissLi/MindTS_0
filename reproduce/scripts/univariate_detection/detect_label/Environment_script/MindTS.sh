@@ -19,5 +19,6 @@ export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 # batch_size reduced from 64 to 8: the MindTS model computes full-vocabulary
 # LM-head logits over the 1024-token text input (55+ GiB at batch 64), which
-# does not fit in this device's 20 GiB GPU
-PYTHONPATH="$PROJECT_ROOT:$PYTHONPATH" "$PYTHON" ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-name-list "Environment.csv" --model-name "MindTS.MindTS" --model-hyper-params '{"batch_size": 8, "d_ff": 64, "d_model": 64, "e_layers": 1, "horizon": 0, "norm": true, "num_epochs": 1, "seq_len": 72, "patch_size": 6, "stride": 6, "mask_ratio": 0.4, "r":0.9, "enc_in_time": 1, "parallel_strategy": "DP"}' --gpus 1 --num-workers 1 --timeout 60000 --save-path "$(pwd)/result/label/Environment" --text-name-list "Environment_text.csv"
+# does not fit in this device's 20 GiB GPU. Gradient accumulation (8 steps)
+# restores the original effective batch size of 64.
+PYTHONPATH="$PROJECT_ROOT:$PYTHONPATH" "$PYTHON" ./scripts/run_benchmark.py --config-path "unfixed_detect_label_config.json" --data-name-list "Environment.csv" --model-name "MindTS.MindTS" --model-hyper-params '{"batch_size": 8, "accumulation_steps": 8, "d_ff": 64, "d_model": 64, "e_layers": 1, "horizon": 0, "norm": true, "num_epochs": 1, "seq_len": 72, "patch_size": 6, "stride": 6, "mask_ratio": 0.4, "r":0.9, "enc_in_time": 1, "parallel_strategy": "DP"}' --gpus 1 --num-workers 1 --timeout 60000 --save-path "$(pwd)/result/label/Environment" --text-name-list "Environment_text.csv"
