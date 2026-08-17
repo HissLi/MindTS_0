@@ -1,0 +1,356 @@
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.data_source(164): Start loading 1 series in parallel
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.data_source(192): Data loading finished.
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.suites.global_storage(39): Data server starting...
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.suites.global_storage(40): Start sending data to the global storage.
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.suites.global_storage(45): Notifying all workers to sync data from the global storage.
+2026-08-17 14:55:24 [INFO] ts_benchmark.data.suites.global_storage(48): Data server started.
+2026-08-17 14:55:24 [INFO] ts_benchmark.models.model_loader(98): Trying to load model ts_benchmark.baselines.MindTS.MindTS
+2026-08-17 14:55:26 [WARNING] root(135): Unknown options: seed 
+scheduling MindTS: 0it [00:00, ?it/s]Some weights of the model checkpoint at deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B were not used when initializing Qwen2ForCausalLM: ['model.layers.10.input_layernorm.weight', 'model.layers.10.mlp.down_proj.weight', 'model.layers.10.mlp.gate_proj.weight', 'model.layers.10.mlp.up_proj.weight', 'model.layers.10.post_attention_layernorm.weight', 'model.layers.10.self_attn.k_proj.bias', 'model.layers.10.self_attn.k_proj.weight', 'model.layers.10.self_attn.o_proj.weight', 'model.layers.10.self_attn.q_proj.bias', 'model.layers.10.self_attn.q_proj.weight', 'model.layers.10.self_attn.v_proj.bias', 'model.layers.10.self_attn.v_proj.weight', 'model.layers.11.input_layernorm.weight', 'model.layers.11.mlp.down_proj.weight', 'model.layers.11.mlp.gate_proj.weight', 'model.layers.11.mlp.up_proj.weight', 'model.layers.11.post_attention_layernorm.weight', 'model.layers.11.self_attn.k_proj.bias', 'model.layers.11.self_attn.k_proj.weight', 'model.layers.11.self_attn.o_proj.weight', 'model.layers.11.self_attn.q_proj.bias', 'model.layers.11.self_attn.q_proj.weight', 'model.layers.11.self_attn.v_proj.bias', 'model.layers.11.self_attn.v_proj.weight', 'model.layers.12.input_layernorm.weight', 'model.layers.12.mlp.down_proj.weight', 'model.layers.12.mlp.gate_proj.weight', 'model.layers.12.mlp.up_proj.weight', 'model.layers.12.post_attention_layernorm.weight', 'model.layers.12.self_attn.k_proj.bias', 'model.layers.12.self_attn.k_proj.weight', 'model.layers.12.self_attn.o_proj.weight', 'model.layers.12.self_attn.q_proj.bias', 'model.layers.12.self_attn.q_proj.weight', 'model.layers.12.self_attn.v_proj.bias', 'model.layers.12.self_attn.v_proj.weight', 'model.layers.13.input_layernorm.weight', 'model.layers.13.mlp.down_proj.weight', 'model.layers.13.mlp.gate_proj.weight', 'model.layers.13.mlp.up_proj.weight', 'model.layers.13.post_attention_layernorm.weight', 'model.layers.13.self_attn.k_proj.bias', 'model.layers.13.self_attn.k_proj.weight', 'model.layers.13.self_attn.o_proj.weight', 'model.layers.13.self_attn.q_proj.bias', 'model.layers.13.self_attn.q_proj.weight', 'model.layers.13.self_attn.v_proj.bias', 'model.layers.13.self_attn.v_proj.weight', 'model.layers.14.input_layernorm.weight', 'model.layers.14.mlp.down_proj.weight', 'model.layers.14.mlp.gate_proj.weight', 'model.layers.14.mlp.up_proj.weight', 'model.layers.14.post_attention_layernorm.weight', 'model.layers.14.self_attn.k_proj.bias', 'model.layers.14.self_attn.k_proj.weight', 'model.layers.14.self_attn.o_proj.weight', 'model.layers.14.self_attn.q_proj.bias', 'model.layers.14.self_attn.q_proj.weight', 'model.layers.14.self_attn.v_proj.bias', 'model.layers.14.self_attn.v_proj.weight', 'model.layers.15.input_layernorm.weight', 'model.layers.15.mlp.down_proj.weight', 'model.layers.15.mlp.gate_proj.weight', 'model.layers.15.mlp.up_proj.weight', 'model.layers.15.post_attention_layernorm.weight', 'model.layers.15.self_attn.k_proj.bias', 'model.layers.15.self_attn.k_proj.weight', 'model.layers.15.self_attn.o_proj.weight', 'model.layers.15.self_attn.q_proj.bias', 'model.layers.15.self_attn.q_proj.weight', 'model.layers.15.self_attn.v_proj.bias', 'model.layers.15.self_attn.v_proj.weight', 'model.layers.16.input_layernorm.weight', 'model.layers.16.mlp.down_proj.weight', 'model.layers.16.mlp.gate_proj.weight', 'model.layers.16.mlp.up_proj.weight', 'model.layers.16.post_attention_layernorm.weight', 'model.layers.16.self_attn.k_proj.bias', 'model.layers.16.self_attn.k_proj.weight', 'model.layers.16.self_attn.o_proj.weight', 'model.layers.16.self_attn.q_proj.bias', 'model.layers.16.self_attn.q_proj.weight', 'model.layers.16.self_attn.v_proj.bias', 'model.layers.16.self_attn.v_proj.weight', 'model.layers.17.input_layernorm.weight', 'model.layers.17.mlp.down_proj.weight', 'model.layers.17.mlp.gate_proj.weight', 'model.layers.17.mlp.up_proj.weight', 'model.layers.17.post_attention_layernorm.weight', 'model.layers.17.self_attn.k_proj.bias', 'model.layers.17.self_attn.k_proj.weight', 'model.layers.17.self_attn.o_proj.weight', 'model.layers.17.self_attn.q_proj.bias', 'model.layers.17.self_attn.q_proj.weight', 'model.layers.17.self_attn.v_proj.bias', 'model.layers.17.self_attn.v_proj.weight', 'model.layers.18.input_layernorm.weight', 'model.layers.18.mlp.down_proj.weight', 'model.layers.18.mlp.gate_proj.weight', 'model.layers.18.mlp.up_proj.weight', 'model.layers.18.post_attention_layernorm.weight', 'model.layers.18.self_attn.k_proj.bias', 'model.layers.18.self_attn.k_proj.weight', 'model.layers.18.self_attn.o_proj.weight', 'model.layers.18.self_attn.q_proj.bias', 'model.layers.18.self_attn.q_proj.weight', 'model.layers.18.self_attn.v_proj.bias', 'model.layers.18.self_attn.v_proj.weight', 'model.layers.19.input_layernorm.weight', 'model.layers.19.mlp.down_proj.weight', 'model.layers.19.mlp.gate_proj.weight', 'model.layers.19.mlp.up_proj.weight', 'model.layers.19.post_attention_layernorm.weight', 'model.layers.19.self_attn.k_proj.bias', 'model.layers.19.self_attn.k_proj.weight', 'model.layers.19.self_attn.o_proj.weight', 'model.layers.19.self_attn.q_proj.bias', 'model.layers.19.self_attn.q_proj.weight', 'model.layers.19.self_attn.v_proj.bias', 'model.layers.19.self_attn.v_proj.weight', 'model.layers.20.input_layernorm.weight', 'model.layers.20.mlp.down_proj.weight', 'model.layers.20.mlp.gate_proj.weight', 'model.layers.20.mlp.up_proj.weight', 'model.layers.20.post_attention_layernorm.weight', 'model.layers.20.self_attn.k_proj.bias', 'model.layers.20.self_attn.k_proj.weight', 'model.layers.20.self_attn.o_proj.weight', 'model.layers.20.self_attn.q_proj.bias', 'model.layers.20.self_attn.q_proj.weight', 'model.layers.20.self_attn.v_proj.bias', 'model.layers.20.self_attn.v_proj.weight', 'model.layers.21.input_layernorm.weight', 'model.layers.21.mlp.down_proj.weight', 'model.layers.21.mlp.gate_proj.weight', 'model.layers.21.mlp.up_proj.weight', 'model.layers.21.post_attention_layernorm.weight', 'model.layers.21.self_attn.k_proj.bias', 'model.layers.21.self_attn.k_proj.weight', 'model.layers.21.self_attn.o_proj.weight', 'model.layers.21.self_attn.q_proj.bias', 'model.layers.21.self_attn.q_proj.weight', 'model.layers.21.self_attn.v_proj.bias', 'model.layers.21.self_attn.v_proj.weight', 'model.layers.22.input_layernorm.weight', 'model.layers.22.mlp.down_proj.weight', 'model.layers.22.mlp.gate_proj.weight', 'model.layers.22.mlp.up_proj.weight', 'model.layers.22.post_attention_layernorm.weight', 'model.layers.22.self_attn.k_proj.bias', 'model.layers.22.self_attn.k_proj.weight', 'model.layers.22.self_attn.o_proj.weight', 'model.layers.22.self_attn.q_proj.bias', 'model.layers.22.self_attn.q_proj.weight', 'model.layers.22.self_attn.v_proj.bias', 'model.layers.22.self_attn.v_proj.weight', 'model.layers.23.input_layernorm.weight', 'model.layers.23.mlp.down_proj.weight', 'model.layers.23.mlp.gate_proj.weight', 'model.layers.23.mlp.up_proj.weight', 'model.layers.23.post_attention_layernorm.weight', 'model.layers.23.self_attn.k_proj.bias', 'model.layers.23.self_attn.k_proj.weight', 'model.layers.23.self_attn.o_proj.weight', 'model.layers.23.self_attn.q_proj.bias', 'model.layers.23.self_attn.q_proj.weight', 'model.layers.23.self_attn.v_proj.bias', 'model.layers.23.self_attn.v_proj.weight', 'model.layers.24.input_layernorm.weight', 'model.layers.24.mlp.down_proj.weight', 'model.layers.24.mlp.gate_proj.weight', 'model.layers.24.mlp.up_proj.weight', 'model.layers.24.post_attention_layernorm.weight', 'model.layers.24.self_attn.k_proj.bias', 'model.layers.24.self_attn.k_proj.weight', 'model.layers.24.self_attn.o_proj.weight', 'model.layers.24.self_attn.q_proj.bias', 'model.layers.24.self_attn.q_proj.weight', 'model.layers.24.self_attn.v_proj.bias', 'model.layers.24.self_attn.v_proj.weight', 'model.layers.25.input_layernorm.weight', 'model.layers.25.mlp.down_proj.weight', 'model.layers.25.mlp.gate_proj.weight', 'model.layers.25.mlp.up_proj.weight', 'model.layers.25.post_attention_layernorm.weight', 'model.layers.25.self_attn.k_proj.bias', 'model.layers.25.self_attn.k_proj.weight', 'model.layers.25.self_attn.o_proj.weight', 'model.layers.25.self_attn.q_proj.bias', 'model.layers.25.self_attn.q_proj.weight', 'model.layers.25.self_attn.v_proj.bias', 'model.layers.25.self_attn.v_proj.weight', 'model.layers.26.input_layernorm.weight', 'model.layers.26.mlp.down_proj.weight', 'model.layers.26.mlp.gate_proj.weight', 'model.layers.26.mlp.up_proj.weight', 'model.layers.26.post_attention_layernorm.weight', 'model.layers.26.self_attn.k_proj.bias', 'model.layers.26.self_attn.k_proj.weight', 'model.layers.26.self_attn.o_proj.weight', 'model.layers.26.self_attn.q_proj.bias', 'model.layers.26.self_attn.q_proj.weight', 'model.layers.26.self_attn.v_proj.bias', 'model.layers.26.self_attn.v_proj.weight', 'model.layers.27.input_layernorm.weight', 'model.layers.27.mlp.down_proj.weight', 'model.layers.27.mlp.gate_proj.weight', 'model.layers.27.mlp.up_proj.weight', 'model.layers.27.post_attention_layernorm.weight', 'model.layers.27.self_attn.k_proj.bias', 'model.layers.27.self_attn.k_proj.weight', 'model.layers.27.self_attn.o_proj.weight', 'model.layers.27.self_attn.q_proj.bias', 'model.layers.27.self_attn.q_proj.weight', 'model.layers.27.self_attn.v_proj.bias', 'model.layers.27.self_attn.v_proj.weight', 'model.layers.6.input_layernorm.weight', 'model.layers.6.mlp.down_proj.weight', 'model.layers.6.mlp.gate_proj.weight', 'model.layers.6.mlp.up_proj.weight', 'model.layers.6.post_attention_layernorm.weight', 'model.layers.6.self_attn.k_proj.bias', 'model.layers.6.self_attn.k_proj.weight', 'model.layers.6.self_attn.o_proj.weight', 'model.layers.6.self_attn.q_proj.bias', 'model.layers.6.self_attn.q_proj.weight', 'model.layers.6.self_attn.v_proj.bias', 'model.layers.6.self_attn.v_proj.weight', 'model.layers.7.input_layernorm.weight', 'model.layers.7.mlp.down_proj.weight', 'model.layers.7.mlp.gate_proj.weight', 'model.layers.7.mlp.up_proj.weight', 'model.layers.7.post_attention_layernorm.weight', 'model.layers.7.self_attn.k_proj.bias', 'model.layers.7.self_attn.k_proj.weight', 'model.layers.7.self_attn.o_proj.weight', 'model.layers.7.self_attn.q_proj.bias', 'model.layers.7.self_attn.q_proj.weight', 'model.layers.7.self_attn.v_proj.bias', 'model.layers.7.self_attn.v_proj.weight', 'model.layers.8.input_layernorm.weight', 'model.layers.8.mlp.down_proj.weight', 'model.layers.8.mlp.gate_proj.weight', 'model.layers.8.mlp.up_proj.weight', 'model.layers.8.post_attention_layernorm.weight', 'model.layers.8.self_attn.k_proj.bias', 'model.layers.8.self_attn.k_proj.weight', 'model.layers.8.self_attn.o_proj.weight', 'model.layers.8.self_attn.q_proj.bias', 'model.layers.8.self_attn.q_proj.weight', 'model.layers.8.self_attn.v_proj.bias', 'model.layers.8.self_attn.v_proj.weight', 'model.layers.9.input_layernorm.weight', 'model.layers.9.mlp.down_proj.weight', 'model.layers.9.mlp.gate_proj.weight', 'model.layers.9.mlp.up_proj.weight', 'model.layers.9.post_attention_layernorm.weight', 'model.layers.9.self_attn.k_proj.bias', 'model.layers.9.self_attn.k_proj.weight', 'model.layers.9.self_attn.o_proj.weight', 'model.layers.9.self_attn.q_proj.bias', 'model.layers.9.self_attn.q_proj.weight', 'model.layers.9.self_attn.v_proj.bias', 'model.layers.9.self_attn.v_proj.weight']
+- This IS expected if you are initializing Qwen2ForCausalLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing Qwen2ForCausalLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Qwen2Model is using Qwen2SdpaAttention, but `torch.nn.functional.scaled_dot_product_attention` does not support `output_attentions=True`. Falling back to the manual attention implementation, but specifying the manual implementation will be required from Transformers version v5.0.0 onwards. This warning can be removed using the argument `attn_implementation="eager"` when loading the model.
+The attention layers in this model are transitioning from computing the RoPE embeddings internally through `position_ids` (2D tensor with the indexes of the tokens), to using externally computed `position_embeddings` (Tuple of tensors, containing cos and sin). In v4.46 `position_ids` will be removed and `position_embeddings` will be mandatory.
+	iters: 10, epoch: 1
+	speed: 2.0436s/iter; left time: 2576.9897s
+	iters: 20, epoch: 1
+	speed: 1.9154s/iter; left time: 2396.1484s
+	iters: 30, epoch: 1
+	speed: 1.9337s/iter; left time: 2399.6649s
+	iters: 40, epoch: 1
+	speed: 1.9655s/iter; left time: 2419.5208s
+	iters: 50, epoch: 1
+	speed: 1.9953s/iter; left time: 2436.2067s
+	iters: 60, epoch: 1
+	speed: 2.0085s/iter; left time: 2432.2415s
+	iters: 70, epoch: 1
+	speed: 2.0110s/iter; left time: 2415.2666s
+	iters: 80, epoch: 1
+	speed: 2.0150s/iter; left time: 2399.9131s
+	iters: 90, epoch: 1
+	speed: 2.0263s/iter; left time: 2393.0705s
+	iters: 100, epoch: 1
+	speed: 2.0287s/iter; left time: 2375.6660s
+	iters: 110, epoch: 1
+	speed: 2.0244s/iter; left time: 2350.3472s
+	iters: 120, epoch: 1
+	speed: 2.0332s/iter; left time: 2340.1749s
+	iters: 130, epoch: 1
+	speed: 2.0323s/iter; left time: 2318.8490s
+	iters: 140, epoch: 1
+	speed: 2.0281s/iter; left time: 2293.8155s
+	iters: 150, epoch: 1
+	speed: 2.0454s/iter; left time: 2292.8784s
+	iters: 160, epoch: 1
+	speed: 2.0320s/iter; left time: 2257.5109s
+	iters: 170, epoch: 1
+	speed: 2.0342s/iter; left time: 2239.6554s
+	iters: 180, epoch: 1
+	speed: 2.0343s/iter; left time: 2219.3830s
+	iters: 190, epoch: 1
+	speed: 2.0385s/iter; left time: 2203.5984s
+	iters: 200, epoch: 1
+	speed: 2.0439s/iter; left time: 2188.9866s
+	iters: 210, epoch: 1
+	speed: 2.0311s/iter; left time: 2155.0344s
+	iters: 220, epoch: 1
+	speed: 2.0376s/iter; left time: 2141.5050s
+	iters: 230, epoch: 1
+	speed: 2.0329s/iter; left time: 2116.2180s
+	iters: 240, epoch: 1
+	speed: 2.0412s/iter; left time: 2104.4436s
+	iters: 250, epoch: 1
+	speed: 2.0418s/iter; left time: 2084.6339s
+	iters: 260, epoch: 1
+	speed: 2.0320s/iter; left time: 2054.3509s
+	iters: 270, epoch: 1
+	speed: 2.0406s/iter; left time: 2042.6213s
+	iters: 280, epoch: 1
+	speed: 2.0367s/iter; left time: 2018.3894s
+	iters: 290, epoch: 1
+	speed: 2.0383s/iter; left time: 1999.5583s
+	iters: 300, epoch: 1
+	speed: 2.0391s/iter; left time: 1980.0112s
+	iters: 310, epoch: 1
+	speed: 2.0310s/iter; left time: 1951.7788s
+	iters: 320, epoch: 1
+	speed: 2.0414s/iter; left time: 1941.3801s
+	iters: 330, epoch: 1
+	speed: 2.0427s/iter; left time: 1922.1747s
+	iters: 340, epoch: 1
+	speed: 2.0360s/iter; left time: 1895.5524s
+	iters: 350, epoch: 1
+	speed: 2.0491s/iter; left time: 1887.2601s
+	iters: 360, epoch: 1
+	speed: 2.0398s/iter; left time: 1858.2930s
+	iters: 370, epoch: 1
+	speed: 2.0307s/iter; left time: 1829.6523s
+	iters: 380, epoch: 1
+	speed: 2.0373s/iter; left time: 1815.2322s
+	iters: 390, epoch: 1
+	speed: 2.0426s/iter; left time: 1799.5500s
+	iters: 400, epoch: 1
+	speed: 2.0383s/iter; left time: 1775.3971s
+	iters: 410, epoch: 1
+	speed: 2.0325s/iter; left time: 1749.9421s
+	iters: 420, epoch: 1
+	speed: 2.0252s/iter; left time: 1723.4744s
+	iters: 430, epoch: 1
+	speed: 2.0256s/iter; left time: 1703.4996s
+	iters: 440, epoch: 1
+	speed: 2.0288s/iter; left time: 1685.9342s
+	iters: 450, epoch: 1
+	speed: 2.0400s/iter; left time: 1674.8661s
+	iters: 460, epoch: 1
+	speed: 2.0442s/iter; left time: 1657.8077s
+	iters: 470, epoch: 1
+	speed: 2.0400s/iter; left time: 1634.0020s
+	iters: 480, epoch: 1
+	speed: 2.0374s/iter; left time: 1611.5943s
+	iters: 490, epoch: 1
+	speed: 2.0472s/iter; left time: 1598.8421s
+	iters: 500, epoch: 1
+	speed: 2.0363s/iter; left time: 1569.9897s
+	iters: 510, epoch: 1
+	speed: 2.0428s/iter; left time: 1554.5436s
+	iters: 520, epoch: 1
+	speed: 2.0386s/iter; left time: 1530.9960s
+	iters: 530, epoch: 1
+	speed: 2.0324s/iter; left time: 1505.9872s
+	iters: 540, epoch: 1
+	speed: 2.0297s/iter; left time: 1483.7252s
+	iters: 550, epoch: 1
+	speed: 2.0350s/iter; left time: 1467.2457s
+	iters: 560, epoch: 1
+	speed: 2.0327s/iter; left time: 1445.2364s
+	iters: 570, epoch: 1
+	speed: 2.0401s/iter; left time: 1430.1348s
+	iters: 580, epoch: 1
+	speed: 2.0338s/iter; left time: 1405.3831s
+	iters: 590, epoch: 1
+	speed: 2.0427s/iter; left time: 1391.0880s
+	iters: 600, epoch: 1
+	speed: 2.0362s/iter; left time: 1366.2840s
+	iters: 610, epoch: 1
+	speed: 2.0375s/iter; left time: 1346.7934s
+	iters: 620, epoch: 1
+	speed: 2.0315s/iter; left time: 1322.5189s
+	iters: 630, epoch: 1
+	speed: 2.0252s/iter; left time: 1298.1755s
+	iters: 640, epoch: 1
+	speed: 2.0373s/iter; left time: 1285.5442s
+	iters: 650, epoch: 1
+	speed: 2.0354s/iter; left time: 1263.9795s
+	iters: 660, epoch: 1
+	speed: 2.0497s/iter; left time: 1252.3576s
+	iters: 670, epoch: 1
+	speed: 2.0355s/iter; left time: 1223.3533s
+	iters: 680, epoch: 1
+	speed: 2.0418s/iter; left time: 1206.6788s
+	iters: 690, epoch: 1
+	speed: 2.0450s/iter; left time: 1188.1616s
+	iters: 700, epoch: 1
+	speed: 2.0349s/iter; left time: 1161.9553s
+	iters: 710, epoch: 1
+	speed: 2.0353s/iter; left time: 1141.8238s
+	iters: 720, epoch: 1
+	speed: 2.0331s/iter; left time: 1120.2319s
+	iters: 730, epoch: 1
+	speed: 2.0448s/iter; left time: 1106.2360s
+	iters: 740, epoch: 1
+	speed: 2.0382s/iter; left time: 1082.2660s
+	iters: 750, epoch: 1
+	speed: 2.0404s/iter; left time: 1063.0587s
+	iters: 760, epoch: 1
+	speed: 2.0352s/iter; left time: 1040.0090s
+	iters: 770, epoch: 1
+	speed: 2.0407s/iter; left time: 1022.4071s
+	iters: 780, epoch: 1
+	speed: 2.0213s/iter; left time: 992.4643s
+	iters: 790, epoch: 1
+	speed: 2.0288s/iter; left time: 975.8641s
+	iters: 800, epoch: 1
+	speed: 2.0317s/iter; left time: 956.9137s
+	iters: 810, epoch: 1
+	speed: 2.0328s/iter; left time: 937.0980s
+	iters: 820, epoch: 1
+	speed: 2.0379s/iter; left time: 919.0807s
+	iters: 830, epoch: 1
+	speed: 2.0324s/iter; left time: 896.2984s
+	iters: 840, epoch: 1
+	speed: 2.0302s/iter; left time: 875.0344s
+	iters: 850, epoch: 1
+	speed: 2.0274s/iter; left time: 853.5223s
+	iters: 860, epoch: 1
+	speed: 2.0399s/iter; left time: 838.4120s
+	iters: 870, epoch: 1
+	speed: 2.0493s/iter; left time: 821.7818s
+	iters: 880, epoch: 1
+	speed: 2.0367s/iter; left time: 796.3502s
+	iters: 890, epoch: 1
+	speed: 2.0323s/iter; left time: 774.2891s
+	iters: 900, epoch: 1
+	speed: 2.0361s/iter; left time: 755.3913s
+	iters: 910, epoch: 1
+	speed: 2.0319s/iter; left time: 733.5125s
+	iters: 920, epoch: 1
+	speed: 2.0343s/iter; left time: 714.0401s
+	iters: 930, epoch: 1
+	speed: 2.0372s/iter; left time: 694.6914s
+	iters: 940, epoch: 1
+	speed: 2.0312s/iter; left time: 672.3425s
+	iters: 950, epoch: 1
+	speed: 2.0403s/iter; left time: 654.9205s
+	iters: 960, epoch: 1
+	speed: 2.0363s/iter; left time: 633.2817s
+	iters: 970, epoch: 1
+	speed: 2.0240s/iter; left time: 609.2218s
+	iters: 980, epoch: 1
+	speed: 2.0333s/iter; left time: 591.6866s
+	iters: 990, epoch: 1
+	speed: 2.0333s/iter; left time: 571.3629s
+	iters: 1000, epoch: 1
+	speed: 2.0369s/iter; left time: 551.9983s
+	iters: 1010, epoch: 1
+	speed: 2.0243s/iter; left time: 528.3515s
+	iters: 1020, epoch: 1
+	speed: 2.0313s/iter; left time: 509.8474s
+	iters: 1030, epoch: 1
+	speed: 2.0265s/iter; left time: 488.3826s
+	iters: 1040, epoch: 1
+	speed: 2.0433s/iter; left time: 472.0119s
+	iters: 1050, epoch: 1
+	speed: 2.0386s/iter; left time: 450.5349s
+	iters: 1060, epoch: 1
+	speed: 2.0319s/iter; left time: 428.7404s
+	iters: 1070, epoch: 1
+	speed: 2.0367s/iter; left time: 409.3785s
+	iters: 1080, epoch: 1
+	speed: 2.0368s/iter; left time: 389.0304s
+	iters: 1090, epoch: 1
+	speed: 2.0337s/iter; left time: 368.0925s
+	iters: 1100, epoch: 1
+	speed: 2.0284s/iter; left time: 346.8605s
+	iters: 1110, epoch: 1
+	speed: 2.0361s/iter; left time: 327.8117s
+	iters: 1120, epoch: 1
+	speed: 2.0374s/iter; left time: 307.6459s
+	iters: 1130, epoch: 1
+	speed: 2.0335s/iter; left time: 286.7252s
+	iters: 1140, epoch: 1
+	speed: 2.0316s/iter; left time: 266.1461s
+	iters: 1150, epoch: 1
+	speed: 2.0369s/iter; left time: 246.4655s
+	iters: 1160, epoch: 1
+	speed: 2.0353s/iter; left time: 225.9205s
+	iters: 1170, epoch: 1
+	speed: 2.0396s/iter; left time: 205.9967s
+	iters: 1180, epoch: 1
+	speed: 2.0318s/iter; left time: 184.8894s
+	iters: 1190, epoch: 1
+	speed: 2.0327s/iter; left time: 164.6476s
+	iters: 1200, epoch: 1
+	speed: 2.0297s/iter; left time: 144.1075s
+	iters: 1210, epoch: 1
+	speed: 2.0370s/iter; left time: 124.2577s
+	iters: 1220, epoch: 1
+	speed: 2.0300s/iter; left time: 103.5290s
+	iters: 1230, epoch: 1
+	speed: 2.0351s/iter; left time: 83.4409s
+	iters: 1240, epoch: 1
+	speed: 2.0307s/iter; left time: 62.9511s
+	iters: 1250, epoch: 1
+	speed: 2.0299s/iter; left time: 42.6273s
+	iters: 1260, epoch: 1
+	speed: 2.0328s/iter; left time: 22.3608s
+	iters: 1270, epoch: 1
+	speed: 1.8768s/iter; left time: 1.8768s
+Validation loss decreased (inf --> 8.519405).  Saving model ...
+Updating learning rate to 0.0001
+31
+[0.944357611753673, 0.08247422680412372, 1.0, 0.043010752688172046, 0.9462331978743357, 0.14, 1.0, 0.07526881720430108, 0.030260047281323876, 1.0, 0.043010752688172046, 0.05874254245066544, 0.07890759631323849, 1.0, 0.041074336748095616, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.94685839324789, 0.16666666666666669, 0.9444444444444444, 0.0913978494623656, 0.9490465770553298, 0.2274881516587678, 0.96, 0.12903225806451613, 0.07706855791962175, 0.9615384615384616, 0.0913978494623656, 0.1426995605203719, 0.16548080724252118, 0.9876923076923076, 0.09030541824868066, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9487339793685526, 0.22641509433962262, 0.9230769230769231, 0.12903225806451613, 0.952172553923101, 0.31390134529147984, 0.9459459459459459, 0.1881720430107527, 0.11536643026004728, 0.95, 0.12903225806451613, 0.20574725396649285, 0.24378213970114834, 0.9861176470588235, 0.13908266439434785, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9499843701156612, 0.2660550458715596, 0.90625, 0.15591397849462366, 0.9531103469834323, 0.34210526315789475, 0.9285714285714286, 0.20967741935483872, 0.13853427895981085, 0.9347826086956522, 0.15591397849462366, 0.24130699175469003, 0.27584526451831215, 0.983097470872407, 0.16042999005095504, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.949671772428884, 0.2907488986784141, 0.8048780487804879, 0.1774193548387097, 0.952172553923101, 0.3489361702127659, 0.8367346938775511, 0.22043010752688172, 0.15839243498817965, 0.7931034482758621, 0.1774193548387097, 0.2640507196710075, 0.30155053483197175, 0.9005964052287583, 0.18109340612660518, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9487339793685526, 0.29914529914529914, 0.7291666666666666, 0.1881720430107527, 0.9509221631759925, 0.34854771784232363, 0.7636363636363637, 0.22580645161290322, 0.16832151300236406, 0.7070707070707072, 0.1881720430107527, 0.2719128831276528, 0.31092399892972133, 0.8534766533884448, 0.19008653512719964, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9506095654892154, 0.3524590163934426, 0.7413793103448276, 0.23118279569892472, 0.9543607377305408, 0.4296875, 0.7857142857142857, 0.2956989247311828, 0.2127659574468085, 0.7286821705426356, 0.23118279569892472, 0.3293622985283812, 0.38618551077884733, 0.8538858355370783, 0.2495170935128624, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9499843701156612, 0.375, 0.6857142857142857, 0.25806451612903225, 0.9537355423569865, 0.44776119402985076, 0.7317073170731707, 0.3225806451612903, 0.24113475177304963, 0.6666666666666666, 0.25806451612903225, 0.35416666666666663, 0.4286672129725497, 0.8434305354814956, 0.2873571625586052, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9490465770553298, 0.4280701754385965, 0.6161616161616161, 0.3279569892473118, 0.9534229446702095, 0.5016722408026755, 0.6637168141592921, 0.4032258064516129, 0.299290780141844, 0.596244131455399, 0.3279569892473118, 0.3985335891372566, 0.4943207974512777, 0.8129778293016287, 0.35512501663433466, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9499843701156612, 0.4630872483221477, 0.6160714285714286, 0.3709677419354839, 0.9543607377305408, 0.532051282051282, 0.6587301587301587, 0.44623655913978494, 0.3361702127659575, 0.6029166666666665, 0.3709677419354839, 0.4316589413663869, 0.5355078767763743, 0.812733399224908, 0.3993041649092276, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9502969678024382, 0.4887459807073955, 0.608, 0.40860215053763443, 0.9540481400437637, 0.544891640866873, 0.6423357664233577, 0.4731182795698925, 0.3673758865248227, 0.5868913857677902, 0.40860215053763443, 0.4518854400659146, 0.5696089819557707, 0.8141499642527599, 0.438038252625739, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9487339793685526, 0.49693251533742333, 0.5785714285714286, 0.43548387096774194, 0.9518599562363238, 0.5416666666666667, 0.6066666666666667, 0.489247311827957, 0.3952718676122932, 0.5640624999999999, 0.43548387096774194, 0.46481820177042943, 0.5901814357268786, 0.8142070990035776, 0.4628344742402057, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9459206001875586, 0.4985507246376812, 0.5408805031446541, 0.46236559139784944, 0.9490465770553298, 0.5408450704225353, 0.5680473372781065, 0.5161290322580645, 0.4236406619385343, 0.5337962962962962, 0.46236559139784944, 0.4723816317268924, 0.6139870828111357, 0.8064442083867689, 0.4956909257425868, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9437324163801187, 0.5027624309392266, 0.5170454545454546, 0.489247311827957, 0.9474835886214442, 0.5508021390374331, 0.5478723404255319, 0.553763440860215, 0.45531914893617026, 0.5080601092896174, 0.489247311827957, 0.48024595629388034, 0.6419121847189495, 0.8025881933446714, 0.534838873453067, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9393560487652391, 0.49214659685863876, 0.47959183673469385, 0.5053763440860215, 0.9427946233197875, 0.534351145038168, 0.5072463768115942, 0.5645161290322581, 0.47234042553191496, 0.47679487179487173, 0.0, 0.47455719594313023, 0.6541605664000741, 0.8008082682086677, 0.55290927165692, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9374804626445764, 0.5098039215686274, 0.46846846846846846, 0.5591397849462365, 0.9402938418255705, 0.5419664268585132, 0.48917748917748916, 0.6075268817204301, 0.5319148936170212, 0.4759009009009009, 0.0, 0.5023512797713862, 0.703299445328406, 0.7986875003078455, 0.6282651087320554, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9359174742106908, 0.5176470588235295, 0.4602510460251046, 0.5913978494623656, 0.9387308533916849, 0.5483870967741935, 0.4798387096774194, 0.6397849462365591, 0.5673758865248226, 0.46833333333333343, 0.0, 0.5131190011526917, 0.7312108938105122, 0.8025118831650846, 0.6715458765108754, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9334166927164739, 0.5191873589164786, 0.4474708171206226, 0.6182795698924731, 0.9359174742106908, 0.5454545454545455, 0.4641509433962264, 0.6612903225806451, 0.5853427895981087, 0.4458579881656805, 0.0, 0.506166721719213, 0.7374102359320486, 0.7976059478505306, 0.685662919262297, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9293529227883713, 0.5129310344827587, 0.42805755395683454, 0.6397849462365591, 0.9327914973429197, 0.5473684210526316, 0.44982698961937717, 0.6989247311827957, 0.6052009456264775, 0.42500000000000004, 0.0, 0.49934025586598596, 0.7462209242532306, 0.7840432910474838, 0.7118797381513929, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9246639574867146, 0.5051334702258726, 0.40863787375415284, 0.6612903225806451, 0.9277899343544858, 0.5352112676056339, 0.42765273311897106, 0.7150537634408602, 0.6222222222222222, 0.4050949913644215, 0.0, 0.4907132916771742, 0.7574187773422417, 0.7793664274505, 0.736673400746367, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9218505783057206, 0.5039682539682541, 0.39937106918238996, 0.6827956989247311, 0.9249765551734918, 0.5330739299610894, 0.4176829268292683, 0.7365591397849462, 0.6505910165484634, 0.3965210355987056, 0.0, 0.4927324121693021, 0.7729457970117335, 0.7798439571698536, 0.7661686030826207, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9149734291966239, 0.4828897338403042, 0.3735294117647059, 0.6827956989247311, 0.9180994060643951, 0.5111940298507462, 0.3914285714285714, 0.7365591397849462, 0.6505910165484634, 0.3719939117199392, 0.0, 0.4733414125035717, 0.7673580028646297, 0.7618278555895186, 0.7729690244529861, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9055954985933105, 0.45878136200716857, 0.34408602150537637, 0.6881720430107527, 0.9087214754610816, 0.4859154929577464, 0.3612565445026178, 0.7419354838709677, 0.6576832151300237, 0.34395218002812944, 0.0, 0.4516844686307501, 0.7669471295250494, 0.7448164369497576, 0.790433231578595, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.9015317286652079, 0.45407279029462744, 0.3350383631713555, 0.7043010752688172, 0.9046577055329791, 0.4804088586030664, 0.3516209476309227, 0.7580645161290323, 0.6789598108747045, 0.3447441217150761, 0.0, 0.4572951147851649, 0.7694309570953222, 0.741803401822447, 0.7991960302191395, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8971553610503282, 0.4489112227805695, 0.3260340632603406, 0.7204301075268817, 0.8999687402313223, 0.471947194719472, 0.3404761904761905, 0.7688172043010753, 0.6959810874704492, 0.33518893387314447, 0.0, 0.4524669140422172, 0.7732843222608518, 0.7312215464850761, 0.8204816974385681, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8921537980618943, 0.4408427876823339, 0.31554524361948955, 0.7311827956989247, 0.8949671772428884, 0.463258785942492, 0.32954545454545453, 0.7795698924731183, 0.7101654846335697, 0.32503255208333337, 0.0, 0.4459569892616999, 0.7703454171930171, 0.7229923000816213, 0.824336153189416, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8852766489527978, 0.42923794712286156, 0.30196936542669583, 0.7419354838709677, 0.8880900281337918, 0.450920245398773, 0.315450643776824, 0.7903225806451613, 0.7243498817966904, 0.311183395291202, 0.0, 0.43534217698953454, 0.7679027014990638, 0.7087256398808637, 0.8378624042897864, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8755861206627071, 0.4094955489614243, 0.2827868852459016, 0.7419354838709677, 0.8783994998437011, 0.4304538799414348, 0.29577464788732394, 0.7903225806451613, 0.7243498817966904, 0.2878492370513648, 0.0, 0.4119813126704031, 0.7610945720240256, 0.6918624645063662, 0.845722924384349, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8680837761800563, 0.39714285714285713, 0.2704280155642023, 0.7473118279569892, 0.8712097530478274, 0.4197183098591549, 0.28435114503816794, 0.8010752688172043, 0.7286052009456265, 0.27105746168246175, 0.0, 0.39512104176774, 0.7600530378352699, 0.6853290522191403, 0.853066010332636, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.8283838699593623, 0.35789473684210527, 0.22869955156950672, 0.8225806451612904, 0.8311972491403563, 0.375, 0.23893805309734514, 0.8709677419354839, 0.8094562647754137, 0.21754464993993797, 0.0, 0.34292643217569835, 0.7538696021905926, 0.6465491257545116, 0.903909191110869, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7905595498593311, 0.33, 0.20270270270270271, 0.8870967741935484, 0.7933729290403251, 0.34489593657086226, 0.21142162818955043, 0.9354838709677419, 0.8874704491725768, 0.1945876546328014, 0.0, 0.31918950129035045, 0.7598496595562847, 0.631439391569502, 0.9538195389110794, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7833698030634574, 0.3225806451612903, 0.1971326164874552, 0.8870967741935484, 0.7861831822444514, 0.3372093023255814, 0.20567375886524822, 0.9354838709677419, 0.8874704491725768, 0.18945567253259565, 0.0, 0.3122522657999479, 0.756645544093069, 0.6270263757674956, 0.9538195389110794, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7733666770865896, 0.3127962085308057, 0.189873417721519, 0.8870967741935484, 0.7761800562675836, 0.3270676691729323, 0.19817767653758542, 0.9354838709677419, 0.8874704491725768, 0.18199457909758343, 0.0, 0.3020478586755728, 0.7540741485452009, 0.62341838024514, 0.9540165444272338, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7633635511097218, 0.3035878564857406, 0.18312985571587126, 0.8870967741935484, 0.7661769302907159, 0.31751824817518254, 0.1912087912087912, 0.9354838709677419, 0.8874704491725768, 0.17444418739155587, 0.0, 0.29157534138683, 0.7534225695889561, 0.6192529033191643, 0.9618124849708198, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7542982181931853, 0.29695885509838993, 0.1781115879828326, 0.8924731182795699, 0.7567989996874023, 0.30905861456483125, 0.1851063829787234, 0.9354838709677419, 0.8903073286052009, 0.16445107922380653, 0.0, 0.2776218704553338, 0.7527135822168719, 0.6173061339750716, 0.9642165981876293, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7433572991559863, 0.2904062229904927, 0.17301750772399588, 0.9032258064516129, 0.745545482963426, 0.30068728522336774, 0.17893660531697342, 0.9408602150537635, 0.9002364066193854, 0.1597135929127881, 0.0, 0.2712957989254954, 0.750887192748906, 0.611423557218948, 0.9727735287727003, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7342919662394498, 0.2833052276559865, 0.168, 0.9032258064516129, 0.7364801500468896, 0.2933780385582565, 0.17378351539225423, 0.9408602150537635, 0.9002364066193854, 0.15575411996883173, 0.0, 0.2655620969061642, 0.7495066394640424, 0.6095949664306487, 0.9727735287727003, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7271022194435761, 0.2791081750619323, 0.1648780487804878, 0.9086021505376344, 0.7289778055642389, 0.2875924404272802, 0.1697381183317168, 0.9408602150537635, 0.9030732860520094, 0.14848262412113103, 0.0, 0.2550329278537684, 0.7478210358819163, 0.607302231800991, 0.9729423906436898, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.7139731165989371, 0.2697525937749402, 0.1583880037488285, 0.9086021505376344, 0.7158487027195999, 0.2779984114376489, 0.16309412861137, 0.9408602150537635, 0.9030732860520094, 0.1424890814313892, 0.0, 0.24614138189479193, 0.7451183745370531, 0.6029630938681295, 0.9749810388189558, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+scheduling MindTS: 1it [1:49:54, 6594.59s/it]scheduling MindTS: 1it [1:49:54, 6594.59s/it]
+[0.7077211628633948, 0.2655145326001571, 0.15547378104875806, 0.9086021505376344, 0.7095967489840576, 0.2736512900703675, 0.16010978956999086, 0.9408602150537635, 0.9030732860520094, 0.1388568492576127, 0.0, 0.24070310839533848, 0.7435521034159426, 0.6009144633208338, 0.9749810388189558, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.6961550484526414, 0.26027397260273977, 0.15159574468085107, 0.9193548387096774, 0.697718036886527, 0.266868840030326, 0.1553398058252427, 0.946236559139785, 0.913002364066194, 0.13262927548641842, 0.0, 0.23161281178388382, 0.7383915390661623, 0.59243582925743, 0.9797739803140251, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+31
+[0.6852141294154424, 0.2535211267605634, 0.1470335339638865, 0.9193548387096774, 0.6867771178493279, 0.2599704579025111, 0.1506849315068493, 0.946236559139785, 0.913002364066194, 0.12816059625931664, 0.0, 0.22476966973221302, 0.737424987674995, 0.5911924015400242, 0.9797739803140251, 0.9095764233125989, 0.5251513864101998, 0.8533146952696328, 0.3748332756532384, 0.8553993588342633, 0.38097558899088524]
+collecting MindTS:   0%|          | 0/1 [00:00<?, ?it/s]collecting MindTS: 100%|██████████| 1/1 [00:00<00:00, 21732.15it/s]collecting MindTS: 100%|██████████| 1/1 [00:00<00:00, 4025.24it/s] 
+2026-08-17 16:45:21 [INFO] ts_benchmark.recording(103): loading log file /home/robin/project/MindTS_0/reproduce/result/label/Environment/MindTS.1787003121.CS-544619.1596223.csv.tar.gz
